@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="articles-section">
+  <div class="articles-grid" id="articles-grid"></div>
+</section>
+
+
+<section class="insta-strip">
+  <div class="insta-row" id="insta-row"></div>
+</section>
+
+<footer class="site-footer">
+  <div class="skyline"></div>
+  <div class="footer-inner">
+    <div class="logo"><span class="mark">z</span>zaira</div>
+    <p class="footer-desc">
+      Browned Butter And Brown Sugar Caramelly Goodness<br>
+      Crispy Edgesthick And Soft Centers And<br>
+      Melty Little Puddles
+    </p>
+    <div class="social-row">
+      <a href="#"><span class="ic">f</span> Facebook</a>
+      <a href="#"><span class="ic">𝕏</span> Twitter</a>
+      <a href="#"><span class="ic">◎</span> Instagram</a>
+      <a href="#"><span class="ic">▶</span> Youtube</a>
+      <a href="#"><span class="ic">P</span> Pinterest</a>
+    </div>
+    <div class="footer-bottom">© 2026 All Rights Reserved</div>
+  </div>
+  <div class="back-top">↑</div>
+</footer>
+
+<script>
+const articles = [
+  {
+    cat:"Destination",
+    img:"https://picsum.photos/seed/graphs1/500/400",
+    title:"Why You Should Consider Graphs For Your Next GraphQL Project",
+    date:"27 AUGUST, 2026",
+    time:"20 MINS",
+    excerpt:"Browned Butter And Brown Sugar Caramelly Oodness Crispy Edgesthick And Soft Centers And Melty Little Puddles Of Chocolate Y First Favorite."
+  },
+  {
+    cat:"Travel",
+    img:"https://picsum.photos/seed/camel2/500/400",
+    title:"How To Create Dynamic Donut Charts With TailwindCSS And React",
+    date:"27 AUGUST, 2026",
+    time:"20 MINS",
+    excerpt:"Browned Butter And Brown Sugar Caramelly Oodness Crispy Edgesthick And Soft Centers And Melty Little Puddles Of Chocolate Y First Favorite."
+  }
+];
+
+const articleCards = articles.map(a => `
+  <article class="article-card">
+    <div class="article-img">
+      <img src="${a.img}" alt="${a.title}">
+      <span class="eyebrow">${a.cat}</span>
+    </div>
+    <h3>${a.title}</h3>
+    <div class="meta"><span>📅 ${a.date}</span><span>🕐 ${a.time}</span></div>
+    <p class="excerpt">${a.excerpt}</p>
+  </article>
+`).join('');
+
+const promoCard = `
+  <div class="promo-card">
+    <img src="https://picsum.photos/seed/travelposter/400/400" alt="It's Travel Time">
+  </div>
+`;
+
+document.getElementById('articles-grid').innerHTML = articleCards + promoCard;
+
+const images = [
+  "https://picsum.photos/seed/travel1/200/200",
+  "https://picsum.photos/seed/travel2/200/200",
+  "https://picsum.photos/seed/travel3/200/200",
+  "https://picsum.photos/seed/travel4/200/200",
+  "https://picsum.photos/seed/travel5/200/200",
+  "https://picsum.photos/seed/travel6/200/200",
+  "https://picsum.photos/seed/travel7/200/200",
+  "https://picsum.photos/seed/travel8/200/200",
+];
+document.getElementById('insta-row').innerHTML = images.map(src => `
+  <a class="insta-item" href="#">
+    <img src="${src}" alt="Instagram photo">
+    <div class="insta-overlay"><span>◎</span></div>
+  </a>
+`).join('');
+</script>
+</body>
+</html>

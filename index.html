@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Exam - 3 Members</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui,sans-serif;}
+    body{background:#f0f2f5;}
+    .header{background:#1a1a2e;color:#fff;text-align:center;padding:30px 20px;}
+    .header h1{font-size:28px;margin-bottom:6px;}
+    .header p{color:#aaa;font-size:14px;}
+    .member-section{border-bottom:4px solid #e0e0e0;}
+    .member-label{background:#16213e;color:#fff;padding:12px 24px;font-size:15px;font-weight:600;display:flex;align-items:center;gap:10px;}
+    .member-label .badge{background:#e94560;border-radius:20px;padding:2px 12px;font-size:12px;}
+    .member-label .badge.riyazul{background:#533483;}
+    .member-label .badge.arobi{background:#0f3460;}
+    .member-label .badge.parvej{background:#e94560;}
+    iframe{width:100%;border:none;display:block;}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Team Project Exam</h1>
+    <p>3 Members — 3 Contributions</p>
+  </div>
+
+  <div class="member-section">
+    <div class="member-label">
+      <span class="badge riyazul">01</span> Riyazul
+    </div>
+    <iframe src="Riyazul/index.html" title="Riyazul's Work" onload="this.style.height=this.contentWindow.document.documentElement.scrollHeight+'px'"></iframe>
+  </div>
+
+  <div class="member-section">
+    <div class="member-label">
+      <span class="badge arobi">02</span> Arobi
+    </div>
+    <iframe src="Arobi/Exam/Exam.html" title="Arobi's Work" onload="this.style.height=this.contentWindow.document.documentElement.scrollHeight+'px'"></iframe>
+  </div>
+
+  <div class="member-section">
+    <div class="member-label">
+      <span class="badge parvej">03</span> Parvej
+    </div>
+    <iframe src="Parvej/index.html" title="Parvej's Work" onload="this.style.height=this.contentWindow.document.documentElement.scrollHeight+'px'"></iframe>
+  </div>
+
+  <script>
+    document.querySelectorAll('iframe').forEach(iframe => {
+      iframe.addEventListener('load', () => {
+        try {
+          const height = iframe.contentWindow.document.documentElement.scrollHeight;
+          iframe.style.height = height + 'px';
+        } catch(e) {}
+      });
+    });
+  </script>
+</body>
+</html>

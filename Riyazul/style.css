@@ -1,0 +1,331 @@
+
+
+/* Hero Section */
+.hero{
+    width:1200px;
+    height:600px;
+    margin:30px auto;
+    position:relative;
+}
+
+.hero img{
+    width:100%;
+    height:600px;
+    display:block;
+}
+
+/*  Blue Navbar */
+.hero-nav{
+    width:100%;
+    height:55px;
+    background:rgb(22, 58, 112);
+    position:absolute;
+    top:0;
+    left:0;
+}
+.hero-nav ul{
+    list-style:none;
+    text-align:center;
+}
+.hero-nav ul li{
+    display:inline-block;
+    line-height:55px;
+    margin:0 20px;
+}
+.hero-nav ul li a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-size:15px;
+    font-weight:bold;
+}
+.hero-nav ul li a:hover{
+    color:rgb(255, 215, 0);
+}
+/*Hero Content */
+.hero-content{
+    width:650px;
+    position:absolute;
+    top:180px;
+    left:275px;
+    text-align:center;
+    color:white;
+}
+/*Button*/
+.hero-content button{
+    background:rgb(255, 91, 107);
+    color:rgb(255, 255, 255);
+    border:none;
+    padding:8px 18px;
+    font-size:14px;
+    margin-bottom:20px;
+
+}
+/*Heading */
+.hero-content h1{
+    font-size:42px;
+    line-height:55px;
+    margin-bottom:20px;
+
+}
+/* Paragraph*/
+.hero-content p{
+    font-size:15px;
+}
+.hero-content p i{
+    margin-right:5px;
+}
+/* Featured Posts*/
+.featured-post{
+    width:1200px;
+    margin:40px auto;
+    overflow:hidden;
+}
+.post{
+    width:30%;
+    float:left;
+    margin-right:2%;
+}
+.post-text{
+    width:52%;
+    float:left;
+}
+.post-image{
+    width:45%;
+    float:right;
+}
+.post-image img{
+    width:100%;
+    height:140px;
+    display:block;
+    border-radius:5px;
+}
+
+.post-text button{
+    padding:4px 10px;
+    background:white;
+    border:1px solid #cccccc;
+    color:#666;
+    font-size:11px;
+}
+
+.post-text h3{
+    margin-top:10px;
+    font-size:18px;
+    color:#183153;
+    line-height:28px;
+}
+
+.post-text p{
+    margin-top:10px;
+    color:#777;
+    font-size:13px;
+}
+
+/*Explore Section*/
+
+.explore{
+    width:1200px;
+    margin:50px auto;
+    overflow:hidden;
+    color:rgb(22, 58, 112);
+}
+
+.explore-title{
+    font-size:35px;
+    margin-bottom:30px;
+}
+/*Left Section*/
+
+.left{
+    width:24%;
+    float:left;
+}
+
+.small-post{
+    margin-bottom:30px;
+}
+
+.small-post img{
+    width:100%;
+    height:180px;
+    display:block;
+}
+
+.small-post button{
+    margin-top:10px;
+    padding:6px 15px;
+    background:rgb(255, 91, 107);
+    color:rgb(255, 255, 255);
+    border:none;
+    font-size:12px;
+}
+
+.small-post h3{
+    margin-top:10px;
+    font-size:20px;
+    line-height:28px;
+    color:rgb(22, 58, 112);
+}
+
+.small-post p{
+    margin-top:10px;
+    color:gray;
+    font-size:13px;
+}
+
+.small-post p i{
+    margin-right:5px;
+}
+
+/*  Middle Section */
+
+.middle{
+    width:46%;
+    float:left;
+    margin-left:3%;
+}
+
+.middle img{
+    width:100%;
+    height:380px;
+    display:block;
+}
+
+.middle button{
+    margin-top:15px;
+    padding:6px 15px;
+    background:rgb(255, 91, 107);
+    color:rgb(255, 255, 255);
+    border:none;
+    font-size:13px;
+}
+
+.middle h2{
+    margin-top:20px;
+    font-size:34px;
+    line-height:45px;
+    color:rgb(22, 58, 112);
+}
+
+.middle p{
+    margin-top:15px;
+    color:rgb(102, 102, 102);
+    line-height:26px;
+}
+
+.middle p i{
+    margin-right:5px;
+}
+
+/* Right Sidebar */
+
+.right{
+    width:24%;
+    float:right;
+}
+
+/* Author Image */
+
+.right img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+
+/* Author Name */
+
+.right h3{
+    text-align:center;
+    margin-top:15px;
+}
+
+/* Description */
+
+.right p{
+    text-align:center;
+    color:rgb(128, 128, 128);
+    margin-top:10px;
+    line-height:24px;
+}
+/*  Social Icons*/
+
+.social{
+    text-align:center;
+    margin-top:25px;
+}
+
+.social a{
+    text-decoration:none;
+}
+.social i{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    background:rgb(22, 58, 112);
+    color:rgb(255, 255, 255);
+    border-radius:50%;
+    margin:5px;
+    font-size:18px;
+}
+
+/* Followers */
+
+.followers{
+    width:100%;
+    margin-top:40px;
+}
+.followers h2{
+    font-size:34px;
+    color:rgb(22, 58, 112);
+    margin-bottom:15px;
+}
+
+.line{
+    width:100%;
+    height:4px;
+    background:rgb(230, 230, 230);
+    margin-bottom:25px;
+    position:relative;
+}
+
+.line::before{
+    content:"";
+    width:50px;
+    height:4px;
+    background:rgb(255, 107, 107);
+    position:absolute;
+    left:0;
+}
+.follow-box{
+    overflow:hidden;
+}
+
+.box{
+    width:48%;
+    height:70px;
+    float:left;
+    margin-bottom:12px;
+    margin-right:2%;
+    background:rgb(244, 244, 244);
+    border-radius:6px;
+    text-align:center;
+    line-height:70px;
+}
+
+.box:nth-child(even){
+    margin-right:0;
+}
+
+.box i{
+    color:rgb(22, 58, 112);
+    font-size:26px;
+    margin-right:10px;
+}
+
+.box span{
+    color:rgb(22, 58, 112);
+    font-size:22px;
+}

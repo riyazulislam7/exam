@@ -1,0 +1,268 @@
+:root{
+  --navy-950:#0c1524;
+  --orange:#f2683c;
+  --text-muted:#a7aec0;
+  --green:#2fbf71;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'Inter',sans-serif;
+  background:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit;}
+img{display:block;max-width:100%;}
+
+
+.articles-section{
+  max-width:1200px;
+  margin:0 auto;
+  padding:40px 20px 10px;
+  border-left:4px solid var(--orange);
+}
+.articles-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 0.75fr;
+  gap:24px;
+  align-items:start;
+}
+.article-card .article-img{
+  position:relative;
+  border-radius:6px;
+  overflow:hidden;
+  margin-bottom:16px;
+  height:170px;
+}
+.article-card .article-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.article-card .eyebrow{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:var(--orange);
+  color:#fff;
+  font-size:10.5px;
+  font-weight:700;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:3px;
+}
+.article-card h3{
+  font-family:'Poppins',sans-serif;
+  font-size:16px;
+  font-weight:700;
+  line-height:1.4;
+  color:#16223a;
+  margin-bottom:10px;
+}
+.article-card .meta{
+  display:flex;
+  gap:14px;
+  color:var(--text-muted);
+  font-size:12px;
+  margin-bottom:12px;
+}
+.article-card .excerpt{
+  color:var(--text-muted);
+  font-size:13px;
+  line-height:1.7;
+}
+.promo-card{
+  border-radius:6px;
+  overflow:hidden;
+  height:260px;
+}
+.promo-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+
+.insta-strip{
+  padding:34px 0;
+  max-width:1200px;
+  margin:0 auto;
+}
+.insta-row{
+  display:flex;
+  gap:14px;
+  overflow-x:auto;
+  padding:0 20px;
+}
+.insta-item{
+  position:relative;
+  flex:0 0 96px;
+  width:96px;
+  height:96px;
+  border-radius:6px;
+  overflow:hidden;
+}
+.insta-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.insta-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(12,21,36,.55);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:18px;
+  opacity:0;
+  transition:opacity .2s;
+}
+.insta-item:hover .insta-overlay{
+  opacity:1;
+}
+
+.site-footer{
+  position:relative;
+  background:var(--navy-950);
+  padding:56px 20px 26px;
+  overflow:hidden;
+}
+.footer-inner{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  margin:0 auto;
+  text-align:center;
+}
+.logo{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:'Poppins',sans-serif;
+  font-weight:800;
+  font-size:26px;
+  color:#fff;
+  margin-bottom:18px;
+}
+.logo .mark{
+  width:30px;
+  height:30px;
+  background:var(--orange);
+  border-radius:7px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+}
+.footer-desc{
+  color:var(--text-muted);
+  font-size:13.5px;
+  line-height:1.8;
+  margin-bottom:24px;
+}
+.social-row{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:28px;
+  padding-bottom:26px;
+  margin-bottom:26px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.social-row a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#fff;
+  font-size:13.5px;
+  font-weight:500;
+}
+.social-row .ic{
+  width:20px;
+  height:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  opacity:.9;
+}
+.footer-bottom{
+  color:var(--text-muted);
+  font-size:12.5px;
+  padding-top:4px;
+}
+
+/* decorative city skyline silhouette */
+.skyline{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:70px;
+  z-index:1;
+  opacity:.35;
+  background-image:
+    linear-gradient(#0c1524,#0c1524),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 30px,
+      #1c2a44 30px 34px,
+      transparent 34px 60px,
+      #1c2a44 60px 66px,
+      transparent 66px 90px
+    );
+  background-size:100% 100%;
+  clip-path:polygon(
+    0% 100%, 0% 60%, 4% 60%, 4% 40%, 8% 40%, 8% 65%,
+    14% 65%, 14% 30%, 18% 30%, 18% 55%, 24% 55%, 24% 45%,
+    30% 45%, 30% 70%, 36% 70%, 36% 25%, 40% 25%, 40% 60%,
+    46% 60%, 46% 35%, 52% 35%, 52% 65%, 58% 65%, 58% 20%,
+    62% 20%, 62% 55%, 68% 55%, 68% 40%, 74% 40%, 74% 68%,
+    80% 68%, 80% 30%, 84% 30%, 84% 58%, 90% 58%, 90% 45%,
+    96% 45%, 96% 65%, 100% 65%, 100% 100%
+  );
+}
+
+
+.back-top{
+  position:absolute;
+  right:20px;
+  bottom:20px;
+  z-index:3;
+  width:34px;
+  height:34px;
+  background:var(--orange);
+  color:#fff;
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:15px;
+  cursor:pointer;
+  box-shadow:0 6px 14px rgba(0,0,0,.3);
+}
+
+@media(max-width:800px){
+  .articles-grid{
+    grid-template-columns:1fr 1fr;
+  }
+  .promo-card{
+    grid-column:1 / -1;
+    height:180px;
+  }
+}
+@media(max-width:600px){
+  .articles-grid{
+    grid-template-columns:1fr;
+  }
+  .insta-item{
+    flex:0 0 76px;
+    width:76px;
+    height:76px;
+  }
+  .social-row{
+    gap:16px;
+  }
+}
